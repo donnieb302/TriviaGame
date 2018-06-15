@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NBA Trivia Game</title
+>   <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div id = "title" class="row blue">
+            <div class="col-md-12">
+                <h1>NBA Trivia!</h1>
+            </div>
+        </div>
+    </div>
+    <div id="main-container" class="container">
+            <section class="main-section">
+                <h1 class="rules">The Rules</h1>
+                <p class="rules">There are 5 questions, you have 50 seconds to answer all 5 questions.</p>
+                <h2>
+                    <button type="button" id="start-button">Start</button>
+                </h2>
+                <!-- timer will be displayed in div#show-number-->
+                <div id="show-number"></div>
+                <!-- question 1 -->
+                <p class="question">1. How many points did Michael Jordan score in his famous "flu game" versus the Utah Jazz in the 1997 NBA Finals?</p>
+                <ul class="answers">
+                <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">100</label><br/>
+                <input type="radio" name="q1" value="b" id="q1b"><label for="q1b">38</label><br/>
+                <input type="radio" name="q1" value="c" id="q1c"><label for="q1c">23</label><br/>
+                <input type="radio" name="q1" value="d" id="q1d"><label for="q1d">3</label><br/>
+                </ul>
+                <!-- question 2 -->
+                <p class="question">2. Atlanta is the fourth home of the NBA's Hawks. Whichof the following is not one of their previous locations?</p>
+                <ul class="answers">
+                <input type="radio" name="q2" value="a" id="q2a"><label for="q2a">E. Moline, IL</label><br/>
+                <input type="radio" name="q2" value="b" id="q2b"><label for="q2b">Milwaukee, WI</label><br/>
+                <input type="radio" name="q2" value="c" id="q2c"><label for="q2c">St. Louis, MO</label><br/>
+                <input type="radio" name="q2" value="d" id="q2d"><label for="q2d">Chicago, IL</label><br/>
+                </ul>
+                <!-- question 3 -->
+                <p class="question">3. Who was the first ever NBA Lottery pick?</p>
+                <ul class="answers">
+                <input type="radio" name="q3" value="a" id="q3a"><label for="q3a">Michael Jordan</label><br/>
+                <input type="radio" name="q3" value="b" id="q3b"><label for="q3b">Wilt Chamberlin</label><br/>
+                <input type="radio" name="q3" value="c" id="q3c"><label for="q3c">Patrick Ewing</label><br/>
+                <input type="radio" name="q3" value="d" id="q3d"><label for="q3d">Shaquille O'Neal</label><br/>
+                </ul>
+                <!-- question 4 -->
+                <p class="question">4. What was the original name of the NBA?</p>
+                <ul class="answers">
+                <input type="radio" name="q4" value="a" id="q4a"><label for="q4a">AAA</label><br/>
+                <input type="radio" name="q4" value="b" id="q4b"><label for="q4b">ABA</label><br/>
+                <input type="radio" name="q4" value="c" id="q4c"><label for="q4c">NBDL </label><br/>
+                <input type="radio" name="q4" value="d" id="q4d"><label for="q4d">BAA</label><br/>
+                </ul>
+                <!-- question 5 -->
+                <p class="question">5. What was Dennis Rodman's nickname?</p>
+                <ul class="answers">
+                <input type="radio" name="q5" value="a" id="q5a"><label for="q5a">The Worm</label><br/>
+                <input type="radio" name="q5" value="b" id="q5b"><label for="q5b">Denise</label><br/>
+                <input type="radio" name="q5" value="c" id="q5c"><label for="q5c">Round Mound of Rebound</label><br/>
+                <input type="radio" name="q5" value="d" id="q5d"><label for="q5d">28</label><br/>
+                </ul>
+                <!-- Hidden Buttons and Elements -->
+                <!-- Submit Button -->
+                <button type="button" id="submit">Submit Final Answers</button>
+                <!-- Results -->
+                <div id="results">
+                Show me the answers!
+                    <!-- <div id="category1">
+                    <p><strong>Question 1:</strong> The correct answer is the <strong>Answer 1</strong>.</p>
+                    </div> -->
+                </div>
+                <button type="button" id="restart">Play Again</button>
+            </section>
+        </div>
+        <footer id="footer" class="site-footer">
+            <div class="container">
+    
+</body>
+</html>
